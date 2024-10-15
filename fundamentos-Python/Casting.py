@@ -1,17 +1,14 @@
 '''
-Nombre:
-Fecha:
+Nombre: Rosalinda Aquino Pérez
+Fecha: 14 de octubre del 2024
 Descripción:
 Conversión de tipos de datos (casting) en Python.
 '''
-
 # Notas
-'''
-La conversión de tipos de datos implica manipular datos que no están en el tipo de dato requerido. Ejemplos:
-de cadena a entero, de cadena a número flotante, y viceversa.
-'''
+# Python es flexible para la conversión de un tipo  de datos a otro.
+
 # *****   Conversión de cadena a entero     *****
-var_cadena = "951"
+var_cadena = "951" #Declaracion de una variable tipo int, y lo que almacenará.
 var_int = int(var_cadena)
 
 # Utiliza la letra "f" antes de las comillas para indicar que la cadena será formateada.
@@ -34,7 +31,7 @@ var_int = 123
 var_float = 123.321
 print()
 print("Conversión de número a cadena.")
-print(f"Los números {var_int} y {var_float} se convierten a cadena utilizando str(var_int): {str(var_cadena)}, y "
+print(f"Los números {var_int} y {var_float} se convierten a cadena utilizando str(var_int): {str(var_int)}, y "
       f"str(var_float): {str(var_float)}.")
 
 # *****   Conversión a booleano     *****
