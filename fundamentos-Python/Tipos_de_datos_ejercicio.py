@@ -10,8 +10,8 @@ Comida = 135.5 #Se declara una variable de tipo float
 print("Comida :",Comida) # imprime el contenido de la variable Comida
 Otros_gastos = 34.5
 print("Otros gastos :",Otros_gastos)
-var_boleana = True #Se declara una variable de tipo boleano
-print("¿Fue mayor a mi presupuesto? ",var_boleana) # se imprime un letrero y
+var_boleana = True #Se declara una variable de tipo boleano y se le asigna el valor : True.
+print("¿Fue mayor a mi presupuesto? ",var_boleana) #
 print()
 
 print("*** Gastos diarios ***")
