@@ -5,21 +5,20 @@ Descripción:
 Conversión de tipos de datos (casting) en Python.
 '''
 # Notas
-# Python es flexible para la conversión de un tipo  de datos a otro.
+# Python es flexible para la conversión de un tipo de datos a otro.
 
 # *****   Conversión de cadena a entero     *****
-var_cadena = "951" #Declaracion de una variable tipo int, y lo que almacenará.
+var_cadena = "951" # Declaracion de una variable tipo string, y lo que almacenará.
 var_int = int(var_cadena)
 
-# Utiliza la letra "f" antes de las comillas para indicar que la cadena será formateada.
-# Esto significa que puedes incluir variables y expresiones dentro de las llaves {}
-# y su valor será insertado en el texto final.
-print("Conversión de cadena a entero.")
+# Se utiliza la letra "f" antes de las comillas para indicar que la cadena será formateada.
+# Se pueden incluir variables y expresiones dentro de las llaves.
+print("Conversión de cadena a entero.")# Imprime un letrero
 print(f"Número como cadena: {var_cadena}.")
 print(f"Número como int más uno: {var_int + 1}.")
 
 # *****   Conversión de cadena a flotante     *****
-var_cadena = "8.88"
+var_cadena = "8.88" # Declaración de una variable tipo string.
 var_float = float(var_cadena)
 print()
 print("Conversión de cadena a flotante.")
