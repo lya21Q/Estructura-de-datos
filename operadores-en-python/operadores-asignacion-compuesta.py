@@ -23,8 +23,9 @@ numero1 *=numero1
 numero1 -=numero2
 numero1 +=3
 numero1 /=2
-numero1=1765 numero2=11
-print("el numero 1 y dos son:",{numero1} {numero2})
+numero1=1765
+numero2=11
+print(f"el numero 1 y dos son:{numero1} {numero2}")
 print(f"el resultado final es :{numero1} {numero2}")
 
 
