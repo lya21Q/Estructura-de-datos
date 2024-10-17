@@ -6,5 +6,5 @@ expresion2= expresion2.lower()=="si"
 print(expresion2)
 print("f¿Ambas son verdaderas?: ",{expresion1 and expresion2})
 print("f¿Ambas son verdaderas?: ",{expresion1 or expresion2})
-print("f¿Ambas son verdaderas?: ",{not expresion1 })
-print("f¿Ambas son verdaderas?: ",{not expresion2 })
+print("f¿La expresion fue verdadera?: ",{not expresion1 })
+print("f¿la expresion fue verdadera?: ",{not expresion2 })
