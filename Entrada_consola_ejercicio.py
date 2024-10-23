@@ -16,7 +16,5 @@ numero2_f /=numero1_f #División.
 print(numero2_f)
 #Nota: Asuma que el usuario siempre va a ingresar números y que el segundo número es diferente de cero.
 
-# Comentar sobre las funciones anidadas.
-# se utilizó para unir el valor de una cadena a otra cadena.
 
 
