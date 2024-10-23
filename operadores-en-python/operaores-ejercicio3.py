@@ -1,3 +1,3 @@
-var=input("¿El numero esta entre 10 y 15?")
+var=input("¿Ingrese un número?")
 variable=int(var)
-print(f"¿esta en este rango?"{var>=10 and var<=15})
+print(f"¿El numero esta entre 10 y 15?{variable>=10 and variable<=15}")
