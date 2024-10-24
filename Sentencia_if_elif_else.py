@@ -18,8 +18,6 @@ elif edad >=25 and edad <=  45 :
     print("El numero esta en el rango de adultos jovenes")
 elif edad >= 46 and edad <=  60 :
     print("El numero esta en el rango de adultos maduros")
-elif edad >= 60 :
-    print("El numero esta en el rango de adultos maduros")
 else :
   print("El rango pertenece a adultos mayores")
 
