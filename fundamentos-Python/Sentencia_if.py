@@ -19,9 +19,8 @@ if condición:
 
 # Ejemplo en donde se imprime un mensaje si el usuario tiene la mayoría de edad.
 print("  ***  Programa que determina si eres mayor de edad  ***")
-numero = int(input("Ingresa tu edad: "))
-
-if numero >= 18:
+numero = int(input("Ingresa tu edad: "))#Se muestra en pantalla un letrero donde solicita que ingrese su edad al usuario.
+if numero >= 18:#Se declara una condición, donde la varia
     print("Eres mayor de edad.")
 
 print("Este código se ejecuta después de evaluarse la sentencia if.")
