@@ -1,10 +1,8 @@
 '''
-Nombre:
-Fecha:
-Descripción:
-Uso de la sentencia de control if-else.
+Nombre:Rosalinda Aquino Pérez
+Fecha:28/Octubre /2024
+Descripción:Uso de la sentencia de control if-else.
 '''
-
 """
 La sentencia if-else es una estructura de control fundamental que permite tomar decisiones en el código.
 Dependiendo de si se cumple una determinada condición, el programa tomará un camino u otro.
@@ -22,7 +20,7 @@ else:
 
 # Ejemplo en donde se determina si un número es par o impar.
 print("  ***  Programa que determina si un número es par o impar  ***")
-numero = int(input("Ingresa un número: "))  # Solicitamos el número
+numero = int(input("Ingresa un número: "))  #
 
 # lógica para determinar si es par o impar
 print()
