@@ -51,5 +51,6 @@ while op != 7  :
         print("Saliendo del programa")
 
 if op != 7 :
-    print("")
+    print("La opcion ingresada es invalida")
 else :
+    print ("")
