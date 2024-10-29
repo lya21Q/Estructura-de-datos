@@ -21,7 +21,7 @@ while op != 7  :
     print("[6].-: exponenciación")
     print("[7].-: Salir del programa")
 
-    op:int(input("ingrese una opción"))
+    op=int(input("ingrese una opción"))
 
     if op ==1 :
         numero1=int(input("ingresa un numero: "))
@@ -48,5 +48,5 @@ while op != 7  :
         numero2 = int(input("ingresa segundo numero: "))
         print(numero1 // numero2)
     elif op ==7 :
-        op=0
+        op=7
         print("salio del programa")
