@@ -48,9 +48,5 @@ while op != 7  :
         numero2 = int(input("ingresa segundo numero: "))
         print(numero1 // numero2)
     elif op ==7 :
-        print("Saliendo del programa")
-
-if op != 7 :
-    print("La opcion ingresada es invalida")
-else :
-    print ("")
+        op=0
+        print("salio del programa")
