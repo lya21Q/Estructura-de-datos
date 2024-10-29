@@ -1,7 +1,7 @@
 '''
 Nombre:Rosalinda Aquino Pérez
 Fecha: 28/Octubre/2024
-Descripción: Uso de la sentencia de control if - elif - else.
+Descripción: Programa que determina la estación del año.
 '''
 print("Este programa determinará la estación del año de acuerdo al número de mes ingresado por el usuario.")
 mes=int(input("Ingrese un número que represente al mes: "))
