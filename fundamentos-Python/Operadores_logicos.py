@@ -1,8 +1,7 @@
 '''
-Nombre:
-Fecha:
-Descripción:
-Ejemplos de uso de los operadores relacionales.
+Nombre:Rosalinda Aquino Pérez
+Fecha:28/Octubre/2024
+Descripción: Ejemplos de uso de los operadores relacionales.
 '''
 
 """
@@ -10,9 +9,9 @@ Los operadores lógicos permiten combinar expresiones booleanas (verdadero o fal
 Estos operadores nos permiten realizar operaciones lógicas como "y", "o" y "no", lo que nos da la capacidad de tomar 
 decisiones más sofisticadas dentro de nuestros programas.
 """
-# Se solicita por consola que se ingresen dos valores (Si/No) para covnertirlas a expresiones booleanas.
-expresion1 = input("Ingresa un valor (Si/No): ")
-expresion2 = input("Ingresa otro valor (Si/No): ")
+
+expresion1 = input("Ingresa un valor (Si/No): ")# Se solicita por consola al usuario que se ingrese dos valores (Si/No).
+expresion2 = input("Ingresa otro valor (Si/No): ")# Se solicita por consola al usuario que se ingrese otro valor (Si/No).
 
 # Las cadenas se convierten a expresiones booleanas (ver Fundamentos-Python -> Entrada_conversiones.py).
 expresion1 = expresion1.lower() == "si"
