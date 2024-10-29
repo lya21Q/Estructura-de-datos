@@ -1,8 +1,6 @@
-"""
-Escribe un programa de nombre Operadores_ejercicio2.py que realice lo siguiente:
 
-Este programa determinará si una persona forma parte de la comunidad de la UNSIJ. Para ello:
-"""
+print("Escribe un programa de nombre Operadores_ejercicio2.py que realice lo siguiente:")
+print("Este programa determinará si una persona forma parte de la comunidad de la UNSIJ.")
 
 """
 a) Pregunte al usuario si es profesor de la UNSIJ (Si/No).

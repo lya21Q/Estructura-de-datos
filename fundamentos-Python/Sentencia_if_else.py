@@ -11,21 +11,15 @@ Sintaxis:
 
 if condición:
     # Código a ejecutar si la condición es verdadera.
-
 else:
     # Código a ejecutar si la condición es falsa.
-
 # Código que se ejecuta sin importar la condición.
 """
-
-# Ejemplo en donde se determina si un número es par o impar.
-print("  ***  Programa que determina si un número es par o impar  ***")
-numero = int(input("Ingresa un número: "))  #
-
-# lógica para determinar si es par o impar
+print("  ***  Programa que determina si un número es par o impar  ***")#Imprime un mensaje en la consola.
+numero = int(input("Ingresa un número: "))  #Muestra un mensaje en consola pidiendo al usuario que ingrese un número, esté se recibé como cadena  y lo convierte a entero.
 print()
-if numero % 2 == 0:  # Implica que es par
-    print("El número es par.")
+if numero % 2 == 0: #Se declara una condicional, dondé verifica si el contenido de la variable numero es divisible entre 2 el residuo es cero.
+    print("El número es par.")#Si la condición es verdadera, se imprime un mensaje "El número es par".
 
 else:
-    print("El número es impar.")  # Implica que es impar
+    print("El número es impar.")#Si la condición no es verdadera, se imprime el siguiente mensaje: "El número es impar"

@@ -2,8 +2,9 @@
 Escribe un programa de nombre Operadores_ejercicio1.py que realice lo siguiente:
 #Rosalinda Aquino Pérez
 #22/Octubre/2024
-Este programa determinará si el usuario aplica para una bonificación. Para ello:
-
+"""
+print("Este programa determinará si el usuario aplica para una bonificación.")
+"""
 a) Solicite al usuario un número decimal con el valor de una compra.
 """
 compra = (float(input("Ingrese un numero decimal: ")))
