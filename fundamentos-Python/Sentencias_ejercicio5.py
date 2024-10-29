@@ -2,7 +2,6 @@
 Nombre:Rosalinda Aquino Pérez
 Fecha: 28/Octubre/2024
 '''
-
 print("Este programa determinará el promedio de una materia e indicará si el alumno aprobó o no la materia.")
 
 cali_1=int(input("Ingrese la calificación del primer parcial: "))

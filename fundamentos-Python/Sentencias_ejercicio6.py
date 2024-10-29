@@ -2,7 +2,6 @@
 Nombre:Rosalinda Aquino Pérez
 Fecha: 28/Octubre/2024
 '''
-
 print("Este programa mostrará los detalles del tour turístico Ecoturixtlán de acuerdo a las siguientes tarifas")
 
 nombre= input("Ingrese el nombre de la persona a cargo : ")
