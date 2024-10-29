@@ -1,18 +1,17 @@
-"""
-Escribe un programa de nombre Sentencias_ejercicio5.py que realice lo siguiente:
+'''
+Nombre:Rosalinda Aquino Pérez
+Fecha: 28/Octubre/2024
+'''
 
-Este programa determinará el promedio de una materia e indicará si el alumno aprobó o no la materia.
+print("Este programa determinará el promedio de una materia e indicará si el alumno aprobó o no la materia.")
 
-Si ambas condiciones se cumplen, se imprime el mensaje en consola: "¡Bienvenido a tu mejor bar!". En caso contrario, se imprime: "Lo sentimos, ya estamos por cerrar!"
+cali_1=int(input("Ingrese la calificación del primer parcial: "))
+cali_2=int(input("Ingrese la calificación del segundo parcial: "))
+cali_3=int(input("Ingrese la calificación del tercer parcial: "))
+ordinario=int(input("Ingrese la calificación del ordinario: "))
 
-Para ello:
-
-a) Solicite al usuario sus tres calificaciones parciales y la calificación del ordinario.
-
-b) Calcule el promedio y determine si aprobó (calificación mínima de 6.0).
-
-d) Muestre el promedio (utilizando un decimal) y el mensaje: "¡Felicidades! Aprobaste.", o el mensaje: "Lo siento, no aprobaste.", según sea el caso.
-
-
-Observe la salida de la consola como guía:
-"""
+prom = (cali_1 + cali_2 + cali_3 + ordinario ) / 4
+if prom >=6 :
+    print(f"la calificación final es de {prom:.2f}, ¡Felicidades aprobaste! ")
+else :
+    print(f"la calificación final es de {prom:.2f}, Lo sentimos no aprobaste ")
