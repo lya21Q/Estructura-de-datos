@@ -14,3 +14,4 @@ while contador <= numero_F:
     aux += contador
     contador += 1
 print(aux)
+#funcion randint pide dos valores
