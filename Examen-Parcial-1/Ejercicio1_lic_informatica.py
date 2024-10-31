@@ -7,14 +7,12 @@ contador=0
 
 numero=int(input(("Ingrese un número:")))
 while contador <= numero:
-    if contador % 3==0 :
-        print("Licenciatura")
-        print(contador, end=" ")
+    if contador % 3==0 and contador % 5==0:
+        print(contador,"Licenciatura",contador, end=" ")
     elif contador % 5 == 0 :
-        print("Informatimática")
-    elif contador % 3== 0 and contador % 5 == 0:
-        print("Licenciatura en informatica")
-        print()
+        print("Informática", end=" ")
+    elif contador % 3== 0:
+        print("Licenciatura en informatica",contador, end=" ")
     else :
-        print(contador)
+        print(contador,end=" ")
     contador += 1
