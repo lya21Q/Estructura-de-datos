@@ -1,7 +1,7 @@
 #Este programa imprime en consola los números separados por comas,
 # del 1 hasta un número ingresado por el usuariio.
 
-
+#Rosalinda Aquino Pérez
 
 contador=0
 
