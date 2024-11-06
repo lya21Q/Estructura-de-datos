@@ -8,48 +8,25 @@ numero=0
 
 var=input("¿En que dificultad deseas jugar: (dificil, facil, medio)?")
 var=var.lower()
-if var = "dificil" :
+
+if var == "dificil" :
+    n_adivinar=(1,110)
     intentos = 10
-if var = "medio" :
-        intentos =5
+if var == "medio" :
+    n_adivinar = (1, 110)
+    intentos =5
+if var == "facil" :
+    intentos = 4
 
 
 
 while numero >= intentos:
-    if var == "dificil" :
-        n_adivinar = randint(1, 110)
-        intentos=10
-        print(f"Numero de intento: {intentos}.", end=" ")
-        numero = int(input("Ingresa un número entre : (1-100): "))
+    numero = int(input("Ingresa un número entre : (1-100): "))
         if numero >= n_adivinar :
             print("El número es mayor")
         elif numero <= n_adivinar :
             print("El numero a adivinar es mayor")
         else :
-            print(f"¡Felicidades! adivinate el número en : {intentos} intentos ")
-            break
-    elif var =="medio" :
-        n_adivinar = randint(1, 100)
-        intentos = 5
-        print(f"Numero de intento: {intentos}.", end=" ")
-        numero = int(input("Ingresa un número entre : (1-100): "))
-        if numero >= n_adivinar :
-            print("El número es mayor")
-        elif numero <= n_adivinar :
-            print("El numero a adivinar es mayor")
-        else :
-            print(f"¡Felicidades! adivinate el número en : {intentos} intentos ")
-            break
-    elif var== "facil" :
-        n_adivinar = randint(1, 50)
-        intentos = 4
-        print(f"Numero de intento: {intentos}.", end=" ")
-        numero = int(input("Ingresa un número entre : (1-100): "))
-        if numero >= n_adivinar:
-            print("El número es mayor")
-        elif numero <= n_adivinar:
-            print("El numero a adivinar es mayor")
-        else:
             print(f"¡Felicidades! adivinate el número en : {intentos} intentos ")
             break
     if numero!= n_adivinar :
