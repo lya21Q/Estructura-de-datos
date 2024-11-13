@@ -22,7 +22,7 @@ def lista (op,nombre1, cantidad,resultado):
     if op==2:
         pro = input("Ingrese nombre de producto: ")
         lista.append(pro)
-        cantidad = int(input("Ingrese la cantidad que deseea añadir:"))
+        cantidad = int(input("Ingese la cantidad que deseea añadir:"))
         cantidad.append(cantidad)
     if op==3:
         print()
