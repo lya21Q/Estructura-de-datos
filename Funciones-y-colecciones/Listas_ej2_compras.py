@@ -6,33 +6,40 @@
 #3)eliminar producto
 #4)salir
 
-def menu ():
+op= None
+lista = []
+cantidad=0
+
+while op!=4:
     print("* Lista de compras *")
     print("[1].-Ver lista ")
     print("[2].-Añadir producto a la lista ")
     print("[3].-Eliminar producto de la lista ")
     print("[4].-Salir ")
-    op=int(input("Ingrese opción:"))
-    return op
+    op = int(input("Ingrese opción:"))
 
-def lista (op,nombre1, cantidad,resultado):
     if op==1:
-        len(lista)
-        print(lista)
-    if op==2:
-        pro = input("Ingrese nombre de producto: ")
-        lista.append(pro)
-        cantidad = int(input("Ingese la cantidad que deseea añadir:"))
-        cantidad.append(cantidad)
-    if op==3:
-        print()
-    if op==4:
-        print()
+        indice = 0
+        for producto in lista :
+            if indice % 2== 0:
+                print(f"El nombre es:{producto}")
+            else :
+                print(f"La cantidad es:{producto}")
+            indice+=1
+    elif op==2:
+        nombre = input("ingrese el nombre del producto:")
+        cantidad = int(input("Ingrese la cantidad que desea añadir:"))
+        lista.append(nombre)
+        lista.append(cantidad)
+    elif op==3:
+        indice =0
+        for producto in lista:
+            if indice %2==0:
+                producto.remove(nombre)
+                producto.remove(cantidad)
+        indice+=1
+        print("Producto eliminado")
+    elif op==4:
+        print("Saliendo del programa")
     else :
         print("Opción no válida")
-
-    return resultado
-
-lista=[]
-lista2=[]
-op=menu()
