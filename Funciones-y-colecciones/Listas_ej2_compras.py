@@ -10,6 +10,9 @@ op= None
 lista = []
 cantidad=0
 
+#producto=(nombre,cantidad)
+#lista_productos.append(producto)
+
 while op!=4:
     print("* Lista de compras *")
     print("[1].-Ver lista ")
