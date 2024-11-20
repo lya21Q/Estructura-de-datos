@@ -7,9 +7,8 @@
 #4)salir
 
 op= None
-lista = []
-cantidad=0
-
+productos = []
+cantidades = []
 #producto=(nombre,cantidad)
 #lista_productos.append(producto)
 
@@ -23,23 +22,24 @@ while op!=4:
 
     if op==1:
         indice = 0
-        for producto in lista :
-            if indice % 2== 0:
-                print(f"El nombre es:{producto}")
-            else :
-                print(f"La cantidad es:{producto}")
-            indice+=1
+        contador=0
+        for producto in productos :
+            print((f"las cantidades {cantidades[contador]} y los productos es: {producto} "))
+            contador+=1
     elif op==2:
         nombre = input("ingrese el nombre del producto:")
         cantidad = int(input("Ingrese la cantidad que desea añadir:"))
-        lista.append(nombre)
-        lista.append(cantidad)
+        productos.append(nombre)
+        cantidades.append(cantidad)
     elif op==3:
-        indice =0
-        for producto in lista:
-            if producto % 2:
-                print()
-        indice+=1
+        nombre_producto=input("Ingrese el nombre del producto que desea eliminar:")
+        numero_producto=0
+
+        while producto[contador]!=nombre_producto:
+            numero_producto+=0
+
+            productos.remove(nombre_producto)
+            del  cantidades[numero_producto]
         print("Producto eliminado")
     elif op==4:
         print("Saliendo del programa")
