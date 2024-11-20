@@ -34,9 +34,8 @@ while op!=4:
     elif op==3:
         indice =0
         for producto in lista:
-            if indice %2==0:
-                producto.remove(nombre)
-                producto.remove(cantidad)
+            if producto % 2:
+                print()
         indice+=1
         print("Producto eliminado")
     elif op==4:
