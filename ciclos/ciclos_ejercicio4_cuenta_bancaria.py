@@ -6,7 +6,7 @@
 #salir
 #Elige una opción
 op=1
-saldo=0
+saldo=100
 while op != 7  :
     print("Bienvenido al banco azteca")
     print("[1].-Consulta Saldo: ")

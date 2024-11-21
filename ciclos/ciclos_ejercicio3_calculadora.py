@@ -19,7 +19,7 @@ while op != 7  :
     print("[4].-: División")
     print("[5].-: División entera")
     print("[6].-: exponenciación")
-    print("[7].-: Salir del programa")
+    print("[0].-: Salir del programa")
 
     op=int(input("ingrese una opción"))
 
@@ -47,6 +47,6 @@ while op != 7  :
         numero1=int(input("ingresa un numero: "))
         numero2 = int(input("ingresa segundo numero: "))
         print(numero1 // numero2)
-    elif op ==7 :
-        op=7
+    elif op ==0 :
+        op=0
         print("salio del programa")
