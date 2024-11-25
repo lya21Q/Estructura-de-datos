@@ -31,8 +31,8 @@ while op!=4:
 
     if op==1:
         print(f"La lista de números es: {lista}")
-        if lista==None:
-            print("La lista esta vacía")
+    elif lista== None:
+        print("La lista esta vacía")
     elif op==2:
         numero=int(input("Ingrese el nuevo valor para añadir:"))
         lista.append(numero)
@@ -40,12 +40,3 @@ while op!=4:
     elif op==3:
         lista = [valor_minimo, valor_maximo]
         valores = (lista)
-        for numeros in lista:
-        if numero <= valor_minimo:
-            print((f"El valor minimo es{valores}"))
-        elif numero >=valor_minimo:
-            print(f"El valor maximo es:")
-    elif op==4:
-        print("Saliendo del programa")
-    else :
-        print("Opción no válida")
