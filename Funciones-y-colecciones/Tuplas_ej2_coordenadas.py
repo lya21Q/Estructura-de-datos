@@ -23,6 +23,6 @@ c) Utilice una lista para almacenar las tuplas de las coordenadas.
 print("Este programa almacena diversos puntos como coordenadas y permite obtener la ecuación de la recta entre dos de los puntos.")
 
 print("[1] Ver cordenadas")
-print("[2] A")
+print("[2] Agregar coordenada")
 print("[3]")
 print("[0]")
