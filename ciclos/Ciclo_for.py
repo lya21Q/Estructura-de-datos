@@ -1,5 +1,4 @@
-#ESTRUCTURA del ciclo FOR:
-#for variable in secuencia :
+
 cadena=input("ingresa una cadena : ")
 contador_caracteres=0
 for caracter in cadena: #palabra reservada caracter
