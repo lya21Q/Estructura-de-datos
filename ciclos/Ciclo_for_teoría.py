@@ -8,7 +8,6 @@ El ciclo for se utiliza para iterar sobre una secuencia (como una lista, tupla o
 para cada elemento de esa secuencia.
 
 Sintaxis:
-
 for variable in secuencia:
     # Código a ejecutar con el valor de la variable dentro de la secuencia.
 
