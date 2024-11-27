@@ -1,17 +1,8 @@
 """Calculadora básica"""
 
-#1)Suma
-#2)resta
-#3)multiplicación
-#4)División
-#5)Division entera
-#6)Exponenciación
-#7)ingresa un menú
 
-
-op=1
-
-while op != 7  :
+op=None
+while op != 0  :
     print("calculadora basica")
     print("[1].-Suma: ")
     print("[2].-: Resta ")
