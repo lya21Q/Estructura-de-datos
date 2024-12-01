@@ -1,3 +1,9 @@
+'''
+Nombre:Rosalinda AAquino Pérez
+Fecha:21/11/2024
+Descripción:
+Ejemplos de uso de las Tuplas.
+'''
 #1) ver calificaciones del alumno
 #2)ver promedios del alumno
 #3)añadir alumno

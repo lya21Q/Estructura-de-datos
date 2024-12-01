@@ -19,8 +19,10 @@ playlist=[]
 def videos(op,playlist):
     while op!=0:
         if(op==1):
+            if not playlist:
+                print("No hay videos para mostrar")
             for video in playlist:
-                print(f"videos añadido:{video}")
+                print(f"videos añadidos:{video}")
         elif(op==2):
             for video in playlist:
                 playlist.sort()
@@ -30,9 +32,9 @@ def videos(op,playlist):
                 playlist.sort(reverse = True )
                 print(video)
         elif(op==4):
-            video=input("Ingrese una lista de videos a la playlist:")
+            video=input("Agregue el nombre del video a ala playlist:")
             playlist.append(video)
-            print(f"Video '{video}' añadido a la playlist.")
+            print(f"Video {video} añadido a la playlist.")
         elif(op==5):
             num_videos = int(input("¿Cuántos videos desea añadir? "))
             for video in range(num_videos):

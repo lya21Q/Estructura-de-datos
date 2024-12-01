@@ -1,3 +1,9 @@
+'''
+Nombre:Rosalinda AAquino Pérez
+Fecha:21/11/2024
+Descripción:
+Ejemplos de uso de las Tuplas.
+'''
 #Desordenado y mutable: No tiene un indice, pero si puede crecer y modificarse.
 """
 *** Ejemplos de uso de conjuntos ***

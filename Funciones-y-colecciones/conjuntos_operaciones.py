@@ -1,4 +1,9 @@
-
+'''
+Nombre:Rosalinda AAquino Pérez
+Fecha:21/11/2024
+Descripción:
+Ejemplos de uso de las Tuplas.
+'''
 ConjuntoA={11,4,10,9,5,11,15,7}
 ConjuntoB={55,70,11,77,66,9,5}
 #Operaciones básicas

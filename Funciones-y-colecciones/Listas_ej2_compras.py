@@ -1,3 +1,9 @@
+'''
+Nombre:Rosalinda AAquino Pérez
+Fecha:21/11/2024
+Descripción:
+Ejemplos de uso de las Tuplas.
+'''
 #Lista de compras
 #sum(suma)
 #len(cantidad de elemntos)
