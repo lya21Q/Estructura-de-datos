@@ -1,4 +1,9 @@
-"""Calculadora básica"""
+'''
+Nombre:Rosalinda AAquino Pérez
+Fecha:21/11/2024
+Descripción:
+Cálculadora básica.
+'''
 
 
 op=None
@@ -15,12 +20,13 @@ while op != 0  :
     op=int(input("ingrese una opción"))
 
     if op ==1 :
-        numero1=int(input("ingresa un numero: "))
-        numero2 = int(input("ingresa segundo numero: "))
+        numero1=float(input("ingresa un numero: "))
+        numero2 =float(input("ingresa segundo numero: "))
         print(numero1 + numero2)
     elif op==2 :
-        numero1=int(input("ingresa un numero: "))
-        numero2 = int(input("ingresa segundo numero: "))
+        numero1=float(input("ingresa un numero: "))
+        numero2 =(float
+                  (input("ingresa segundo numero: ")))
         print(numero1 - numero2)
     elif op==3 :
         numero1=int(input("ingresa un numero: "))
