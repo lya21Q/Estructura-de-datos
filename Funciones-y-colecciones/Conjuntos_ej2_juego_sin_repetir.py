@@ -18,7 +18,5 @@ def contar_palabras(palabras):
     for palabra in palabras:
       print(palabra)
   elif op==2:
-    print("Entrada")
-      print(palabras)
-      print()
+    print()
 
