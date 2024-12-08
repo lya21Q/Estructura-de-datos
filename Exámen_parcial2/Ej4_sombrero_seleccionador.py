@@ -15,52 +15,30 @@ Slytherin=0
 Hufflepuff=0
 Ravenclaw=0
 preguntas=[]
-def determinar_casa(op,preguntas,respuesta):
-    if op==1:
-        print("¿Cuál de las siguientes opciones odiarías más que la gente te llamara?")
-        while respuesta!=4:
-            print("1)-Ordinario.")
-            print("2)-Ignorante.")
-            print("3)- Cobarde.")
-            print("4)- Egoísta.")
-            respuesta=input("Seleccione su respuesta:")
 
-        print("Despùes de tu muerte,¿que es lo que màs te gustaria que hiciera la gente cuando escuche tu nombre:")
-        print("1)  - Te extraña, pero sonrie.")
-        print("2)- Pidde màs historias sobre tus aventuras.")
-        print("3)- Piensa con admiraciòn tus logros.")
-        print("4)-No me importa lo que piensen de mì despues de mi muerte, lo que piensen de mì ahora es lo que cuenta.")
-        respuesta=input("Seleccione su respuesta:")
+preguntas=["¿Cuál de las siguientes opciones odiarías más que la gente te llamara?"]
+prguntas = ["Despùes de tu muerte,¿que es lo que màs te gustaria que hiciera la gente cuando escuche tu nombre:"]
+preguntas=["Dada la opción, preferirías inventar una poción que garantizara:"]
+preguntas = ["¿Cómo te definirías en una sola palabra?"]
 
-        print("Dada la opción, preferirías inventar una poción que garantizara:")
-        print("1) - Gloria.")
-        print("2) - Sabiduría.")
-        print("3) - Amor.")
-        print("4) - Poder.")
-        respuesta=input("Seleccione su respuesta:")
 
-        print("¿Cómo te definirías en una sola palabra?")
-        print("1) - Valiente.")
-        print("2) - Ambicioso.")
-        print("3) - Leal.")
-        print("4) - Curioso.")
-        respuesta=input("Seleccione su respuesta:")
+respuesta=["1)-Ordinario."]
+respuesta = ["2)-Ignorante."]
+respuesta=["3)- Cobarde."]
+respuesta = ["4)- Egoísta."]
 
-        print("¿Qué cualidad te describe mejor?")
-        print("1) - La fuerza.")
-        print("2) - La astucia.")
-        print("3) - La paciencia.")
-        print("4) - La inteligencia.")
-        respuesta=input("Seleccione su respuesta:")
+tu_respuesta=input("Seleccione su respuesta:")
 
-        print("¿Cuál es tu clase favorita?")
-        print("1)  - Vuelo.")
-        print("2) - Defensa contra las artes oscuras.")
-        print("3) - Animales fantásticos.")
-        print("4) - Pociones.")
+respuesta=["1)  - Te extraña, pero sonrie."]
+respuesta=["2)- Pidde màs historias sobre tus aventuras."]
+respuesta=["3)- Piensa con admiraciòn tus logros."]
+respuesta=["4)-No me importa lo que piensen de mì despues de mi muerte, lo que piensen de mì ahora es lo que cuenta."]
+tu_respuesta=input("Seleccione su respuesta:")
 
-        print("¿Cuál es tu lenguaje de programación favorito?")
-        print("1)- C.")
-        print("2)- Python.")
-        print("3) - C + +.")
-        print("4)- JavaScript.")
+respuesta = ["1) - Gloria."]
+respuesta=["2) - Sabiduría."]
+respuesta=["3) - Amor."]
+respuesta = ["4) - Poder."]
+tu_respuesta=input("Seleccione su respuesta:")
+respuesta.add(respuesta)
+
