@@ -10,3 +10,5 @@ nombre=nombre.lower
 def hola(nombre) :
     print(f"Hola {nombre}")
 print("Adios")
+# Ej2_conversiones_decimal_binario_hexadecimal.py
+
