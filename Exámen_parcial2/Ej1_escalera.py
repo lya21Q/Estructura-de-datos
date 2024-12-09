@@ -23,7 +23,7 @@ def escalera_ascendente(numero_escalones,espacio,escalera):
                 escalera=" " * espacio + "_|"
                 print(f"{escalera}")
         elif numero_escalones == 0:
-            print("Saliendo...")
+            print("Saliendo del programa.")
         else:
             print("Opción no válida.")
     return numero_escalones
