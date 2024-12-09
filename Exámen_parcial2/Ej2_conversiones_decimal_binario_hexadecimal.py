@@ -29,10 +29,14 @@ def decimal_a_binario_y_hexadecimal(op):
         while numero > 0:
             residuo=numero % 16
             hexadecimal=hexadecimal_1[residuo]+ hexadecimal
-            print(f"El numero {numero} es: {binario} en binario y {hexadecimal}hexadecimal.")
+            print(f"El numero {numero} es: {binario} en binario y {hexadecimal} hexadecimal.")
             return binario, hexadecimal
-def binario_a_decimal_y_hexadecimal(op):
+def binario_a_decimal_y_hexadecimal(op
+
+
+                                    ):
     if op == 2:
+        binario=""
         binario = int(input("Ingrese el numero en base binaria: "))
         # conversion a decimal
         decimal = 0
@@ -50,7 +54,7 @@ def binario_a_decimal_y_hexadecimal(op):
             hexadecimal = hexadecimal_1[residuo] + hexadecimal
             numero = numero // 16
             print(f"El numero binario {binario} es: {decimal} en decimal y {hexadecimal} hexadecimal.")
-        return decimal,hexadecimal
+        return decimal
 
 def hexadecimal_a_decimal_y_binario(op,numero,binario ):  #Convertir de hexadecimal a decimal
     if op==3:
@@ -75,5 +79,5 @@ def hexadecimal_a_decimal_y_binario(op,numero,binario ):  #Convertir de hexadeci
     return decimal,binario
 
 op=menu()
-binario,hexadecimal=decimal_a_binario_y_hexadecimal(op)
-decimal,hexadecimal=binario_a_decimal_y_hexadecimal(op,binario,hexadecimal)
+binario=decimal_a_binario_y_hexadecimal(op)
+decimal=binario_a_decimal_y_hexadecimal(op)
