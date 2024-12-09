@@ -21,3 +21,15 @@ def menu():
     print("[0].- Salir.")
     op=int(input("Ingrese opción:"))
     return op
+
+def convertir(op):
+
+    if op == 1:
+        texto=input("Ingrese texto a convertir: ")
+    elif op == 2:
+        texto=input("Ingrese texto a convertir: ")
+        print("Texto convertido a lenguaje intermedio: ", texto)
+    elif op == 0:
+        print("Saliendo del programa.")
+    else:
+        print("Opciòn no valida.")

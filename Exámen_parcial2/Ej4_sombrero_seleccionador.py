@@ -10,11 +10,11 @@ def menu():
     op=int(input("ingrese opción"))
     return op
 
-Gryffindor=0
-Slytherin=0
-Hufflepuff=0
-Ravenclaw=0
-preguntas=[]
+    Gryffindor=0
+    Slytherin=0
+    Hufflepuff=0
+    Ravenclaw=0
+    preguntas=[]
 
 preguntas=["¿Cuál de las siguientes opciones odiarías más que la gente te llamara?"]
 prguntas = ["Despùes de tu muerte,¿que es lo que màs te gustaria que hiciera la gente cuando escuche tu nombre:"]
