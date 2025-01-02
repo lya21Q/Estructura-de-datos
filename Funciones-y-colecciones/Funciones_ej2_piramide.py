@@ -34,6 +34,7 @@ def opcion4(fila):
 
 #Solicita al usuario que ingrese el número de filas.
 fila=int(input("Ingrese el número de filas :"))
+#Llamada de las funciones.
 opcion1(fila)
 opcion2(fila)
 opcion3(fila)
