@@ -15,7 +15,7 @@ while op!=0:
     print("[0].-: Salir del programa")
     #Solicita al usuario que ingrese una opción.
     op = int(input("ingrese una opción:"))
-#Csaso para salir del programa.
+    #Caso para salir del programa.
     if op==0:
         print("Saliendo del programa.")
     #caso para ver la playlist de videos añadidos.
