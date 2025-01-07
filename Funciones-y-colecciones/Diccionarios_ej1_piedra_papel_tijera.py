@@ -38,6 +38,7 @@ TIJERA = "Tijera."
 JUGADOR = "Gana el jugador."
 EMPATE = "Empate."
 CPU = "Gana la CPU."
+
 #Función que muestra el menú y devuelve la opción seleccionada por el jugador.
 def menu():
     print("  ***  Juego de piedra, papel o tijeras  ***")
@@ -65,7 +66,7 @@ def eleccion_jugador(op):
     Lista.append(PIEDRA)
     Lista.append(PAPEL)
     Lista.append(TIJERA)
-    #CPU elige aleatoriamente entre las opciones.
+    # El CPU elige aleatoriamente entre las opciones.
     opcion_CPU = choice(Lista)
     return jugador,opcion_CPU
 
@@ -88,7 +89,6 @@ while op!= 0: #El juego continúa mientras el jugador no elija salir.
     if op == 0: #Salir del programa.
         print()
         print("Fin del programa.")
-
     #Actualiza los contadores y muestra el resultado.
     elif Resultado == JUGADOR:
         Victorias_del_jugador += 1
@@ -101,5 +101,5 @@ while op!= 0: #El juego continúa mientras el jugador no elija salir.
         print(f"Jugador: {op} CPU: {opcion_CPU} {EMPATE}")
     else:
         print()
-        print("Opción incorrecta.") #Mensaje para opciones no válidas.
+        print("Opción incorrecta.")
 
