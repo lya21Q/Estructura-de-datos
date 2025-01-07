@@ -40,7 +40,7 @@ def eleccion_jugador(op):
     Lista.append(PIEDRA)
     Lista.append(PAPEL)
     Lista.append(TIJERA)
-    #CPU elige aleatoriamente entre las opciones.
+
     opcion_CPU = choice(Lista)
     return jugador,opcion_CPU
 
@@ -52,11 +52,10 @@ Piedra_papel_tijera = {(PIEDRA, TIJERA): JUGADOR,
                        (PAPEL, PIEDRA): JUGADOR,
                        (PAPEL, TIJERA): CPU,
                        }
-#Ciclo principal del juego.
+
 while op!= 0: #El juego continúa mientras el jugador no elija salir.
     op = menu() #Muestra el menú y obtiene la opción del jugador.
     jugador,opcion_CPU =eleccion_jugador(op)   #Obtiene la elección del jugador y del CPU.
-
     #Resultado del juego usando el diccionario.
     Resultado = Piedra_papel_tijera.get((jugador,opcion_CPU), EMPATE)
 
@@ -76,5 +75,5 @@ while op!= 0: #El juego continúa mientras el jugador no elija salir.
         print(f"Jugador: {op} CPU: {opcion_CPU} {EMPATE}")
     else:
         print()
-        print("Opción incorrecta.") #Mensaje para opciones no válidas.
+        print("Opción incorrecta.")
 
