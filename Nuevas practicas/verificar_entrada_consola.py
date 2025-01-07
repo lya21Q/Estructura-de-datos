@@ -16,7 +16,7 @@
 def cadena_a_entero(cadena):
     no_puntos=cadena.count(".")#Contando el numero de puntos
     no_guiones=cadena.count("-")#Contando el numero de guiones
-    revisar_cadena=cadena.lstrip("-").replace(".")
+    revisar_cadena=cadena.lstrip("-").replace(".","")
     if revisar_cadena.isnumeric() and no_guiones in (0,1) and no_puntos in (0,1):
         return float(cadena)
     else:
@@ -29,4 +29,4 @@ while numero is None:
     print("Opción no válida")
     num_cadena=input("Ingresa Z:")
     numero=cadena_a_entero(num_cadena)
-print(f"El numero {num_cadena} es tipo {type(num_cadena)}")
+print(f"El numero {numero} es tipo {type(numero)}")
