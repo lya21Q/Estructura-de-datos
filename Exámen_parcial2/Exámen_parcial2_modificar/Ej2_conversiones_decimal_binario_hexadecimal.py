@@ -8,7 +8,7 @@ def menu():
     print("[1].- Convertir de decimal a binario y hexadecimal.")
     print("[2].-convertir de binario a decimal y hexadecimal.")
     print("[3].-Convertir de hexadecimal a decimal y binario.")
-    print("[4].- Suma de binarios.")
+    print("[4].-Suma de binarios")
     print("[0].- Salir.")
     op=int(input("Ingrese opción:"))
     return op
@@ -19,7 +19,7 @@ def decimal_a_binario_y_hexadecimal(op):
         binario=""
         hexadecimal=""
         digito="0b"
-        digito_2="0x"
+        digito_1="0x"
         num=numero
         while num > 0:
             residuo= num % 2
@@ -32,31 +32,10 @@ def decimal_a_binario_y_hexadecimal(op):
         while numero > 0:
             residuo=numero % 16
             hexadecimal=hexadecimal_1[residuo]+ hexadecimal
-            print(f"El numero {numero} es:{digito+binario} en binario y {digito_2+hexadecimal} hexadecimal.")
+            print(f"El numero {numero} es: {digito+binario} en binario y {digito_1+hexadecimal} hexadecimal.")
             return binario, hexadecimal
 def binario_a_decimal_y_hexadecimal(op):
     if op == 2:
-        binario=""
-        binario = int(input("Ingrese el numero en base binaria: "))
-        # conversion a decimal
-        decimal = 0
-        potencia = 0
-        for digit in reversed(binario):
-            decimal += int(digit) * (2**potencia)
-            potencia += 1
-
-        #coonversion hexadecimal
-        hexadecimal = ""
-        hexadecimal_1 = "0123456789ABCDEF"
-        numero=decimal
-        while numero > 0:
-            residuo = numero % 16
-            hexadecimal = hexadecimal_1[residuo] + hexadecimal
-            numero = numero // 16
-            print(f"El numero binario {binario} es: {decimal} en decimal y {hexadecimal} en hexadecimal.")
-            return decimal
-def binario_a_decimal_y_hexadecimal(op):
-    if op == 4:
         binario=""
         binario = input("Ingrese el numero en base binaria: ")
         # conversion a decimal
@@ -74,8 +53,31 @@ def binario_a_decimal_y_hexadecimal(op):
             residuo = numero % 16
             hexadecimal = hexadecimal_1[residuo] + hexadecimal
             numero = numero // 16
-            print(f"El numero binario {binario} es: {decimal} en decimal y {hexadecimal} en hexadecimal.")
-            return decimal
+            print(f"El numero binario {binario} es: {decimal} en decimal y {hexadecimal} hexadecimal.")
+        return decimal
+suma_binaros=0
+def binario_a_decimal_y_hexadecimal_1(op):
+    if op == 4:
+        binario=""
+        binario = input("Ingrese el numero en base binaria: ")
+        # conversion a decimal
+        decimal = 0
+        potencia = 0
+        for digit in reversed(binario):
+            decimal += int(digit) * (2**potencia)
+            potencia += 1
+            suma_binaros=decimal+decimal
+        #coonversion hexadecimal
+        hexadecimal = ""
+        hexadecimal_1 = "0123456789ABCDEF"
+        numero=decimal
+        while numero > 0:
+            residuo = numero % 16
+            hexadecimal = hexadecimal_1[residuo] + hexadecimal
+            numero = numero // 16
+            print(f"El numero binario {binario} es: {decimal} en decimal")
+            print(f"La suma de binarios es{suma_binaros}")
+        return decimal
 
 def hexadecimal_a_decimal_y_binario(op,numero,binario ):  #Convertir de hexadecimal a decimal
     if op==3:
@@ -97,25 +99,12 @@ def hexadecimal_a_decimal_y_binario(op,numero,binario ):  #Convertir de hexadeci
             binario = binario + str(residuo) + binario
             numero/=2
             print(f"El numero hexadecimal {hexadecimal} es: {decimal} en decimal y {binario} en binario.")
-            return decimal,binario
-
-suma_binarios=None
-def suma_de_binarios(op,suma_binarios):
-    if op == 4:
-        binario=""
-        binario = int(input("Ingrese el numero en base binaria: "))
-        for i in binario:
-        # conversion a decimal
-            decimal = 0
-            potencia = 0
-            for digit in range(binario):
-                decimal += (digit) * (2**potencia)
-                potencia += 1
-            suma_binarios
-        return suma_binarios
+    return decimal,binario
 
 
-suma_binarios=suma_de_binarios(op,suma_binarios)
+
 op=menu()
+
+decimal=binario_a_decimal_y_hexadecimal_1(op)
 binario=decimal_a_binario_y_hexadecimal(op)
 decimal=binario_a_decimal_y_hexadecimal(op)
