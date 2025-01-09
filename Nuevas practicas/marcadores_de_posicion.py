@@ -31,6 +31,3 @@ def cadena_a_flotante(cadena):
         elif opcion==0:
             print("Salir.")
 
-cadena=cadena_a_entero(cadena)
-cadena=cadena_a_flotante(cadena)
-opcion=menu()

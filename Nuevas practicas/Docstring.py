@@ -1,6 +1,9 @@
 opcion=None
 
-def menu():
+def menu()->int:
+    """
+    :return: {Muestra el menú del programa, devuelve el entero que haya elegido el usuario.}
+    """
     print("[1].-Cadena a entero.")
     print("[2].-Cadena a flotante.")
     print("[0].-Salir")
@@ -8,6 +11,10 @@ def menu():
     return opcion
 
 def cadena_a_entero(cadena:str)->int|None:#especificar el tipo de dato que se va a enviar.
+    """
+    :param cadena:Es la cadena a convertir a número entero. Función que convierte una cadena a número entero con validación.
+    :return:Devuelve el número entrero, en caso de no tener el formato de validación devuelve None.
+    """
     no_guiones=cadena.count("-")
     revisar_cadena=cadena.lstrip("-")
     if revisar_cadena.isnumeric() and no_guiones in (0,1) :
@@ -44,4 +51,3 @@ while opcion!=0:
             print("Saliendo...")
     else:
         print("Opción no válida.")
-
