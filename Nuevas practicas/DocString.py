@@ -46,7 +46,7 @@ while opcion != 0:
             num = cadena_a_entero(num_cadena)
             print()
         print(f"El número {num} es de tipo {type(num)}")
-        print()}
+        print()
     elif opcion == 2:
         num_cadena: str = input("Ingresa el número a convertir: ")
         num = cadena_a_flotante(num_cadena)
