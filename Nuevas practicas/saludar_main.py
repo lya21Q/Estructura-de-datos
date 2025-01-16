@@ -1,5 +1,6 @@
-from saludar_modulo import saludar
+from Saludar_modulo import saludar
 
-if __name__=="__main__":
-    cadena=input("ingresa el nombre del usuario:")
-    saludar(cadena)
+if __name__ == "__main__":
+    saludo = input("Ingresa el nombre:")
+    saludar(saludo)
+    print(saludo)
