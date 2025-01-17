@@ -31,16 +31,16 @@ def main()->None:
         if opcion==0:
             print("Saliendo del programa.")
         elif opcion==1:
-            num1 = float(input("Ingrese un número:"))
-            num2 = float(input("Ingrese un segundo número:"))
-            resultado=suma(num1,num2)
-            verificar_cadena(resultado)
+            num1 :str=input("Ingrese un número:")
+            resultado = verificar_cadena(num1)
+            num2 :str=input("Ingrese un segundo número:")
+            resultado = verificar_cadena(num1)
             print(f"El resultado de la suma es:{resultado}")
         elif opcion==2:
-            num1 = float(input("Ingrese un número:"))
-            num2 = float(input("Ingrese un segundo número:"))
-            resultado=suma(num1,num2)
-            verificar_cadena(resultado)
+            num1 :str=input("Ingrese un número:")
+            resultado = verificar_cadena(num1)
+            num2 :str=input("Ingrese un segundo número:")
+            resultado = verificar_cadena(num1)
             print(f"El resultado de la suma es:{resultado}")
         else:
             print("Saliendo del programa.")
