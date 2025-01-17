@@ -33,24 +33,14 @@ def main()->None:
         elif opcion==1:
             num1 = float(input("Ingrese un número:"))
             num2 = float(input("Ingrese un segundo número:"))
-            verificar_cadena(num1)
-            verificar_cadena(num2)
-            while num1 and num2 is None:
-                num1 = input("Opción no válida, intente de nuevo:")
-                num2 = input("Opción no válida, intente de nuevo:")
-                resultado = verificar_cadena(num1)
-                resultado = verificar_cadena(num2)
+            resultado=suma(num1,num2)
+            verificar_cadena(resultado)
             print(f"El resultado de la suma es:{resultado}")
         elif opcion==2:
             num1 = float(input("Ingrese un número:"))
             num2 = float(input("Ingrese un segundo número:"))
-            verificar_cadena(num1)
-            verificar_cadena(num2)
-            while num1 and num2 is None:
-                num1 = input("Opción no válida, intente de nuevo:")
-                num2 = input("Opción no válida, intente de nuevo:")
-                resultado = verificar_cadena(num1)
-                resultado = verificar_cadena(num2)
+            resultado=suma(num1,num2)
+            verificar_cadena(resultado)
             print(f"El resultado de la suma es:{resultado}")
         else:
             print("Saliendo del programa.")
