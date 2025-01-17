@@ -1,6 +1,6 @@
 def saludar(cadena)->str |None:
-    print(cadena)
+    print(f"Hola:{cadena}")
 
 if __name__ == "__main__":
-    saludo = input("Ingresa el nombre:")
-    print(saludo)#
+    cadena = input("Ingresa el nombre:")
+    saludar(cadena)

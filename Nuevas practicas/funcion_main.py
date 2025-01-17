@@ -1,13 +1,13 @@
 opcion=None
 def menu()->int:
-    print("***Menu**")
+    print("***Menú**")
     print("[1].- Sumar")
     print("[2].- Restar")
-    print("[3].-Salir")
+    print("[0].-Salir")
     opcion = int(input("Ingrese una opcion:"))
     return opcion
 
-def suma(resultado:str)->float|None:
+def verificar_cadena(resultado:str)->float|None:
     no_guiones=resultado.count("-")
     no_puntos=resultado.count(".")
     revisar_resultado=resultado.lstrip("-").replace(".","")
@@ -16,30 +16,44 @@ def suma(resultado:str)->float|None:
     else:
         return None
 
-def resta(resultado:str)->float|None:
-    no_guiones=resultado.count("-")
-    no_puntos=resultado.count(".")
-    revisar_resultado=resultado.lstrip("-").replace(".","")
-    if revisar_resultado.isnumeric() and no_guiones in (0,1) and no_puntos in (0,1):
-        return float(resultado)
-    else:
-        return None
+def suma(num1,num2):
+    resultado=num1+num2
+    return resultado
+
+def resta(num1,num2):
+    resultado=num1-num2
+    return resultado
 
 def main()->None:
-    while opcion !=3:
-        opcion = menu()
-        if opcion == 1:
-            num1 = float(input("Ingrese un numero:"))
-            resultado = num1 + num2
-            resultado = suma(num1, num2)
-        elif opcion == 2:
+    opcion=None
+    while opcion!=0:
+        opcion=menu()
+        if opcion==0:
+            print("Saliendo del programa.")
+        elif opcion==1:
+            num1 = float(input("Ingrese un número:"))
             num2 = float(input("Ingrese un segundo número:"))
-            resultado = num1 - num2
-            resultado = resta(num1, num2)
+            verificar_cadena(num1)
+            verificar_cadena(num2)
+            while num1 and num2 is None:
+                num1 = input("Opción no válida, intente de nuevo:")
+                num2 = input("Opción no válida, intente de nuevo:")
+                resultado = verificar_cadena(num1)
+                resultado = verificar_cadena(num2)
+            print(f"El resultado de la suma es:{resultado}")
+        elif opcion==2:
+            num1 = float(input("Ingrese un número:"))
+            num2 = float(input("Ingrese un segundo número:"))
+            verificar_cadena(num1)
+            verificar_cadena(num2)
+            while num1 and num2 is None:
+                num1 = input("Opción no válida, intente de nuevo:")
+                num2 = input("Opción no válida, intente de nuevo:")
+                resultado = verificar_cadena(num1)
+                resultado = verificar_cadena(num2)
+            print(f"El resultado de la suma es:{resultado}")
         else:
-            print("Opción no válida")
+            print("Saliendo del programa.")
 
-if __name__=="main":
-    print(__name__)
+if __name__=="__main__":
     main()
-    #
