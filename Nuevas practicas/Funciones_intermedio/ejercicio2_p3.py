@@ -61,3 +61,10 @@ def main() -> None:
 if _name_ == '_main_':  # indica si el código es el que se ejecuta.
     main()  # Llamada de la función a nivel de módulo.
 '''
+"""
+exámen
+#Cuatro en raya
+#El gato
+#ahorcado
+#Todo eso en un menú, en un solo programa.
+"""
