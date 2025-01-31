@@ -1,10 +1,5 @@
 #Rosalinda Aquino perez
-from random import random, choice, randint
-
-op=None
-jugador=None
-jugador=None
-tablero=[]
+import random
 
 #Muestra el yablero
 def mostrar_tablero():
@@ -24,7 +19,7 @@ for i in range(1,10):#Bucle para crear nuestra lista
         columna.append(fila)
         fila=[]#Receteamos la fila
 tablero=columna[:]
-
+posicion=tablero
 #Funcion para encontral al ganador del juego.
 def ganador_juego(tablero):
     ganador=None
@@ -42,33 +37,20 @@ def ganador_juego(tablero):
             ganador=tablero[0][2]
         return ganador
 
-# Verifica si una casilla está ocupada.
-def casilla_ocupada(tablero,fila,columna, jugador):
-    if tablero[fila][columna] == 'X' or tablero[fila][columna] == 'O':
-        print("Casilla ocupada.")
-    else:
-        tablero[fila][columna] = jugador
-
-def menu():
-    print("1) X ")
-    print("2) O ")
-    print("3) salir ")
-    op=int(input("Elige una opción:"))
-    return op
-
+contador =0
 jugador=None
-while op!=3:
-    mostrar_tablero()
-    lista=[]
-    op=menu()
-    if jugador=='X':
-        fila=int(input("Ingrese la posición de la fila"))
-        columna=int(input("Ingrese la posición de la fila"))
+tablero=columna[:]
+# Bucle principal del juego
+
+while contador != 9:
+    mostrar_tablero()  # Mostrar el tablero actual
+    if jugador == 'X': #turno del jugador
+        fila=input("Ingresa la posición de la fila:")
+        columna=input("Ingresa la posición de la columna:")
     else:
-        fila=int(input("Ingresa el numero de posicion de la fila"))
-        columna=int(input("Ingresa el numero de posicion de la fila"))
+        CPU=random.randint(0,2)
+        print("Tiro del CPU")
+    if ganador_juego(tablero):
+        print(f"El ganador es {jugador}")
 
-
-jugador1=int(input("Ingrese una opcion para el jugador 1:"))
-jugador2=int(input("Ingrese una opcion para el jugador 2:"))
 

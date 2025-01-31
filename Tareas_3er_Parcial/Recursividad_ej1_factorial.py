@@ -33,7 +33,6 @@ def main() -> None:
 
     num_cadena = input("Ingresa un número entero positivo: ")# Solicita al usuario un número y valida que sea un entero positivo.
     print()
-
     if es_numero_valido(num_cadena):# Si es un número válido, calcula y muestra el factorial.
         numero = int(num_cadena)
         resultado = factorial(numero)
