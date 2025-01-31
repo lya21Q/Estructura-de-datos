@@ -19,11 +19,6 @@ Esto permite resolver problemas dividiéndolos en subproblemas más pequeños y 
 
 
 def funcion_recursiva_ascendente(numero: int) -> None:
-    """
-    Función que imprime un número de manera ascendente utilizando recursividad.
-    :param numero: Se imprime del cero hasta este número.
-    """
-
     # Caso base.
     if numero == 0:
         print(numero, end= ' ')
