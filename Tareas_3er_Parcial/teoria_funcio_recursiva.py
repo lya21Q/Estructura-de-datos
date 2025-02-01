@@ -77,7 +77,6 @@ def main() -> None:
     # En caso contrario, finaliza el programa.
     if es_numero_valido(num_cadena):
         numero = int(num_cadena)
-
         print(f"Número del 0 al {numero} de manera ascendente:")
         funcion_recursiva_ascendente(numero)
 
