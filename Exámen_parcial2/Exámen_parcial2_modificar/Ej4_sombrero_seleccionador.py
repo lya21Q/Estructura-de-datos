@@ -22,7 +22,7 @@ preguntas=["Dada la opción, preferirías inventar una poción que garantizara:"
 preguntas = ["¿Cómo te definirías en una sola palabra?"]
 
 
-respuesta=["1)-Ordinario."]
+respuesta=["1)-Ordinario_Estructura_Datos."]
 respuesta = ["2)-Ignorante."]
 respuesta=["3)- Cobarde."]
 respuesta = ["4)- Egoísta."]

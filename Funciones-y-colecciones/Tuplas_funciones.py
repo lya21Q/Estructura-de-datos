@@ -24,7 +24,7 @@ print("  ***  Programa que determina el promedio utilizando funcioens y tuplas  
 parcial1 = float(input("Ingresa la calificación del Parcial 1: ").strip())
 parcial2 = float(input("Ingresa la calificación del Parcial 2: ").strip())
 parcial3 = float(input("Ingresa la calificación del Parcial 3: ").strip())
-ordinario = float(input("Ingresa la calificación del Ordinario: ").strip())
+ordinario = float(input("Ingresa la calificación del Ordinario_Estructura_Datos: ").strip())
 print()
 
 # Se crea una tupla
