@@ -1,74 +1,98 @@
 #Rosalinda Aquino perez
-from random import random, choice, randint
+import random
+def menu():
+    """
 
-op=None
-jugador=None
-jugador=None
-tablero=[]
+    :return: retorna un valor entero según haya elegido el usuario.
+    """
+    print("*** Modo de juego ***")
+    print("[1].- Jugador contra jugador")
+    print("[2].- Jugador con CPU")
+    print("[3].- Salir")
+    opcion = input("Selecciona una opción: ")
+    while not opcion.isnumeric() or int(opcion) not in range(1, 4):
+        print("Opción no válida. Intenta de nuevo")
+        opcion = input("Selecciona una opción: ")
+    return int(opcion)
+
+
+def crear_tablero_gato() -> list:
+    """
+    Crea un tablero vacío de 3 filas por 3 columnas.
+    :return: Regresa el tablero en forma de lista.
+    """
+    return [[" " for _ in range(3)] for _ in range(3)]
 
 #Muestra el yablero
-def mostrar_tablero():
-    for fila in tablero:#ciclo que itera sobre cada fila del tablero.
-        print('-------------')
-        for posicion in fila:#ciclo que itera cada columna del tablero
-            print('|',posicion,'',end='')
-        print('|')
-    print("-------------")
-    return tablero
+def mostrar_tablero(tablero):
+    print("   1   2   3")
+    for i, fila in enumerate(tablero):
+        print(f"{i + 1}  " + " | ".join(fila))
+        if i < 2:
+            print("  -----------")
 
-columna=[]
-fila=[]
-for i in range(1,10):#Bucle para crear nuestra lista
-    fila.append(i)#Añadir el numero a la fila.
-    if i%3==0:
-        columna.append(fila)
-        fila=[]#Receteamos la fila
-tablero=columna[:]
+def colocar_ficha (tablero,columna,fila,ficha):
+    if tablero[fila-1][columna-1]==" ":
+        tablero[fila-1][columna-1]=ficha
+        return True
+    return False
 
-#Funcion para encontral al ganador del juego.
-def ganador_juego(tablero):
-    ganador=None
-    for i in range(3):
+def ganador_juego(tablero,ficha):
+
+    for i in range(2):
         #Comprobar filas
-        if tablero[i][0]==tablero[i][1]==tablero[i][2]==tablero[i][0]!='':
-            ganador=tablero[i][0]
+        if tablero[i][0]==ficha and tablero[i][1]==ficha and tablero[i][2]==ficha :
+            print(f"Gano {ficha}")
+            return False
         #comprueba columnas
-        if tablero[i][0]==tablero[1][i]==tablero[2][i]==tablero[0][i]!='':
-            ganador=tablero[0][i]
+        if tablero[0][i]==ficha and tablero[1][i]==ficha and tablero[2][i]==ficha:
+            print(f"Gano {ficha}")
+            return False
         #Revisar diagonales.
-        if tablero[0][0]==tablero[1][1]==tablero[2][2]==tablero[0][0]!='':
-            ganador=tablero[i][0]
-        if tablero[0][2]==tablero[1][1]==tablero[2][0]==tablero[0][2]!='':
-            ganador=tablero[0][2]
-        return ganador
+    if tablero[0][0]==ficha and tablero[1][1]==ficha and tablero[2][2]==ficha:
+        print(f"Gano {ficha}")
+        return False
+    if tablero[0][2]==ficha and tablero[1][1]==ficha and tablero[2][0]==ficha:
+        print(f"Gano {ficha}")
+        return False
 
-# Verifica si una casilla está ocupada.
-def casilla_ocupada(tablero,fila,columna, jugador):
-    if tablero[fila][columna] == 'X' or tablero[fila][columna] == 'O':
-        print("Casilla ocupada.")
-    else:
-        tablero[fila][columna] = jugador
+    return True
 
-def menu():
-    print("1) X ")
-    print("2) O ")
-    print("3) salir ")
-    op=int(input("Elige una opción:"))
-    return op
-
-jugador=None
-while op!=3:
-    mostrar_tablero()
-    lista=[]
+# ///////////////////////////////////////////////////////////////////////////////////////// Función main.
+def main ():
+    contador =0
+    tablero = crear_tablero_gato()
+    # Bucle principal del juego
+    ficha = "X"
     op=menu()
-    if jugador=='X':
-        fila=int(input("Ingrese la posición de la fila"))
-        columna=int(input("Ingrese la posición de la fila"))
-    else:
-        fila=int(input("Ingresa el numero de posicion de la fila"))
-        columna=int(input("Ingresa el numero de posicion de la fila"))
+    while contador < 9 and ganador_juego(tablero,ficha):
+        contador+=1
+        mostrar_tablero(tablero)  # Mostrar el tablero actual
+        if op== 1:
+            if contador % 2 == 1:
+                columna = int(input("Ingresa el numero de columna:"))
+                fila = int(input("Ingresa el numero de fila:"))
+                ficha = "X"
+                colocar_ficha(tablero, columna, fila, ficha)
+                print(f"Gano {ficha}")
+            else:
+                columna = int(input("Ingresa el numero de columna: "))
+                fila = int(input("Ingresa el numero de fila: "))
+                ficha = "0"
+                colocar_ficha(tablero, columna, fila, ficha)
+        elif op==2:
+            if contador % 2 == 0:
+                columna = int(input("Ingresa el numero de columna: "))
+                fila = int(input("Ingresa el numero de fila: "))
+                ficha = "X"
+                colocar_ficha(tablero, columna, fila, ficha)
+            else:
+                columna = random.randint(0, 3)
+                fila = random.randint(0, 3)
+                ficha = "O"
+                colocar_ficha(tablero, columna, fila, ficha)
+            if contador==9:
+                print("¡Empate!")
 
-
-jugador1=int(input("Ingrese una opcion para el jugador 1:"))
-jugador2=int(input("Ingrese una opcion para el jugador 2:"))
-
+if __name__ == "__main__":
+    main()
